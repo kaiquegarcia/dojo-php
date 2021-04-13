@@ -1,6 +1,6 @@
 version: "3.5"
 services:
-    php:
+    dojo-php:
         build:
             context: .
         image: nanoninja/php-fpm:7.4.4

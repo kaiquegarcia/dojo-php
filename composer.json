@@ -1,0 +1,21 @@
+{
+  "name": "kaiquegarcia/dojo-php",
+  "description": "Basic project for starting public Coding Dojos focused on PHP",
+  "type": "project",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Dojo\\": "src",
+      "Tests\\": "tests"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.4",
+    "fzaninotto/faker": "^v1.9.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5.4",
+    "spatie/phpunit-watcher": "^1.23.2"
+  }
+}

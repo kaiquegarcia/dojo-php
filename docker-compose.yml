@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+    php:
+        build:
+            context: .
+        image: nanoninja/php-fpm:7.4.4
+        container_name: dojo-php
+        volumes:
+            - .:/var/www/html
+        command: ["./docker-enrypoint.sh"]

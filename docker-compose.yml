@@ -7,4 +7,4 @@ services:
         container_name: dojo-php
         volumes:
             - .:/var/www/html
-        command: ["./docker-enrypoint.sh"]
+        command: ["./docker-entrypoint.sh"]

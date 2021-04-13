@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+vendor
+node_modules
+/.vagrant
+npm-debug.log
+yarn-error.log
+.history
+.env
+.phpunit.result.cache
+phpunit.xml.dist.bak

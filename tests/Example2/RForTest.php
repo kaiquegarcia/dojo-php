@@ -2,6 +2,7 @@
 
 namespace Tests\Example2;
 
+use Dojo\Example2\RFor;
 use Tests\TestCase;
 
 class RForTest extends TestCase
@@ -16,7 +17,7 @@ class RForTest extends TestCase
                 $result[] = $loop->contador;
             })->andThen(function ($loop) {
                 $loop->contador++;
-            });
+            })->run();
 
         self::assertEquals([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], $result);
     }
@@ -31,7 +32,7 @@ class RForTest extends TestCase
                 $result[] = $loop->contador;
             })->andThen(function ($loop) {
                 $loop->contador--;
-            });
+            })->run();
 
         self::assertEquals([10, 9, 8, 7, 6, 5, 4, 3, 2, 1], $result);
     }
@@ -47,7 +48,7 @@ class RForTest extends TestCase
             })->andThen(function ($loop) {
                 $loop->numero += 2;
                 $loop->resultados++;
-            });
+            })->run();
 
         self::assertEquals([150, 152, 154, 156, 158, 160, 162, 164, 166, 168], $result);
     }
